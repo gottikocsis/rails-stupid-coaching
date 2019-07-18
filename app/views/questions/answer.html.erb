@@ -1,0 +1,12 @@
+<p>
+  <% if @question.blank? %>
+  Please ask a question!
+  <% else %>
+  <%= @question %>
+  <%end %>
+</p>
+
+<p>
+  <%= @answer %></p>
+
+<%= link_to "Ask a new question", ask_path %>
